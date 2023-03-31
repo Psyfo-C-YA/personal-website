@@ -1,0 +1,355 @@
+body {
+    background-color: #E5FDD1;
+}
+
+h1, h2, h3, p { 
+    color: #658864;
+}
+
+a{
+    text-decoration: none;
+}
+
+/* Home Section -------------------------------------------------------------------------------------------------------------------------- */
+
+
+
+.img-my-face{
+    height: 235px;
+    border-radius: 50dvh;
+    
+}
+
+.btn{
+    margin-left: 75%;
+}
+
+/* td{
+    column-gap: 100px;
+} */
+
+/* table {
+    border-spacing: 30px;
+  }
+   */
+
+/* .grid-table{
+    margin: 3rem auto;
+} */
+
+nav{
+    position: relative;
+    background-color: rgba(0, green, 0, 0.5px);
+    margin: 2% 25%;
+    border-radius: 8rem;
+    color: #658864;
+    opacity: 75%;
+    transition: transform 500ms ease;
+    overflow: hidden;
+    
+}
+.navbar-toggler{
+    color: #0c3d0b;
+    background-color: #658864;
+}
+
+nav:hover{
+    transform: scale(1.05);
+}
+
+
+@media  (min-width: 350px) and (max-width: 992px) {
+	nav{
+        border-radius: 2rem;
+    }
+   
+    .navbar-toggler{
+        margin: auto;
+
+    }
+
+    .navbar-nav{
+        text-align: center;
+    }
+
+}
+
+.nav-item{
+    padding: .5rem;
+}
+
+nav .nav-link{
+    color: #658864;
+}
+
+nav .nav-link:hover{
+    color: #0c3d0b;
+}
+
+.box{
+    margin: 5% 5%;
+    padding: 2%;
+    background-color: whitesmoke;
+    transition: transform 500ms ease;
+}
+
+.box:hover{
+    transform: scale(1.05);
+}
+
+#home{
+    margin: 0 auto;
+}
+
+/* .container{
+    margin: 5% 20%;
+} */
+
+.justify-content{
+    justify-content: center;
+}
+
+.justify-item{
+    text-align: right;
+}
+
+.blob{
+    width: 200px;
+    fill: #658864;
+}
+
+.img-profile{
+    width: 170px;
+}
+
+.forest{
+    height: 25rem;
+    width: 100%;
+    margin-bottom: -0.19rem;
+    opacity: 0.3;
+}
+
+/* About Section -------------------------------------------------------------------------------------------------------------------------- */
+
+#about{
+    padding: 1rem;
+    background-color: whitesmoke;
+}
+.img-custom-left {
+    height: 175px;
+    width: 35%;
+    border-radius: 70%;
+    float: left;
+    margin-right: 30px;
+}
+
+.p-left{
+    text-align: start;
+}
+
+.h-left{
+    text-align: start;
+}
+
+
+.img-custom-right {
+    height: 175px;
+    width: 35%;
+    border-radius: 70%;
+    float: right;
+    margin-left: 30px;
+}
+
+.skill-row{
+    width: 70%;
+    margin: 100px auto;
+    text-align: left;
+}
+
+
+#skills img{
+    height: 200px;
+    width: 35%;
+   
+}
+
+.appear {
+    transform: translateX(0);
+    opacity: 1;
+}
+
+.from-left {
+    opacity: 1;
+    transform: translateX(-50%);
+    transition: opacity 150ms ease-in, transform 400ms ease-in;
+}
+
+.from-right {
+    
+    transform: translateX(50%);
+}
+@media (prefers-reduced-motion: no-preference) {
+    .from-left, .from-right{
+        opacity: 0;
+        transition: opacity 150ms ease-in, transform 400ms ease-in;
+        
+        
+        
+       
+    
+        
+    }
+
+    .appear {
+        transform: translateX(0);
+        opacity: 1;
+    }
+    
+    .from-left {
+        
+        transform: translateX(-50%);
+    }
+    
+    .from-right {
+        
+        transform: translateX(50%);
+    }
+    
+}
+
+
+
+
+/* .skill-row > h3, p{
+    text-align: left;
+}
+
+.skill-row > p{
+    padding-left: 25px;
+} */
+
+/* Skills Section -------------------------------------------------------------------------------------------------------------------------- */
+#skills{
+    margin: 10em 0;
+}
+
+table{
+    transition: transform 500ms ease;
+}
+
+table:hover{
+    transform: scale(1.05);
+}
+
+.center{
+    max-width: 100%;
+}
+
+.diagonal{
+    padding: 8%;
+    margin-top: 10%;
+    position: relative;
+   
+    isolation: isolate;
+}
+
+.diagonal::after{
+    content: '';
+    background-image: linear-gradient(
+        45deg,
+        #658864,
+        #0c3d0b,
+        #658864
+    );
+    position: absolute;
+    inset: 0;
+    transform: skewY(-5deg);
+    z-index: -1;
+}
+
+
+/* Projects Section -------------------------------------------------------------------------------------------------------------------------- */
+#projects{
+    background-color: whitesmoke;
+    margin: 10em 0;
+    padding: 10em 0;
+}
+
+
+.custom-card{
+    background-image: url("/images/pexels-cottonbro-studio-4065864.jpg");
+    background-size: cover;
+    padding: 5rem 0 0;
+    max-width: 90%;
+    max-height: 100%;
+    border-radius: 1rem;
+    overflow: hidden;
+    transition: transform 500ms ease;
+    margin: 1em auto
+}
+
+.custom-card:hover{
+    transform: scale(1.05);
+}
+
+
+.card-title{
+    margin-left: 0.5em;
+    color: whitesmoke;
+    position: relative;
+    width: max-content;
+    
+}
+
+.card-body{
+    color: rgba(255, 255, 255, 0.85);
+}
+
+.card-content{
+    --padding: 1.5rem;
+    padding: var(--padding);
+    background: linear-gradient(
+        hsl(0 0% 0% / 0),
+        hsl(0 0% 0% / 0.2) 10%,
+        hsl(107, 87%, 15%, 1)
+    );
+}
+
+.card-title::after{
+    content: '';
+    position: absolute;
+    left: 0;
+    height: 4px;
+    width:100%;
+    background: hsl(107, 87%, 15%, 1);
+    bottom: 0;
+    padding: 0 1em;
+}
+
+.home_social-icon{
+    color: #0c3d0b;
+}
+
+/* Qualifications Section -------------------------------------------------------------------------------------------------------------------------- */
+#qualifications{
+    padding: 10rem 0;
+    margin: -10rem auto 0;
+   
+}
+
+.downBtn{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+/* Footer Section -------------------------------------------------------------------------------------------------- */
+#footer{
+    padding: 5%;
+    background-color: #658864;
+    color: whitesmoke;
+}
+
+.text{
+    color: whitesmoke;
+}
